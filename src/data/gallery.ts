@@ -7,19 +7,21 @@ export interface Photo {
   tone: Tone
 }
 
+const photo = (filename: string) => `${import.meta.env.BASE_URL}photos/${filename}`
+
 export const PHOTOS: Photo[] = [
-  { src: '/photos/bw_tree.jpg', w: 640, h: 853, tone: 'bw' },
-  { src: '/photos/bw_crosswalk.jpg', w: 640, h: 480, tone: 'bw' },
-  { src: '/photos/bw_stairs.jpg', w: 640, h: 1137, tone: 'bw' },
-  { src: '/photos/bw_alley.jpg', w: 640, h: 853, tone: 'bw' },
-  { src: '/photos/bw_window.jpg', w: 640, h: 480, tone: 'bw' },
-  { src: '/photos/color_plane.jpg', w: 640, h: 480, tone: 'color' },
-  { src: '/photos/color_diner.jpg', w: 640, h: 557, tone: 'color' },
-  { src: '/photos/color_beach.jpg', w: 640, h: 959, tone: 'color' },
-  { src: '/photos/color_jump.jpg', w: 640, h: 424, tone: 'color' },
-  { src: '/photos/pol_woman.jpg', w: 736, h: 969, tone: 'polaroid' },
-  { src: '/photos/pol_man.jpg', w: 736, h: 969, tone: 'polaroid' },
-  { src: '/photos/pol_child.jpg', w: 736, h: 969, tone: 'polaroid' },
+  { src: photo('bw_tree.jpg'), w: 640, h: 853, tone: 'bw' },
+  { src: photo('bw_crosswalk.jpg'), w: 640, h: 480, tone: 'bw' },
+  { src: photo('bw_stairs.jpg'), w: 640, h: 1137, tone: 'bw' },
+  { src: photo('bw_alley.jpg'), w: 640, h: 853, tone: 'bw' },
+  { src: photo('bw_window.jpg'), w: 640, h: 480, tone: 'bw' },
+  { src: photo('color_plane.jpg'), w: 640, h: 480, tone: 'color' },
+  { src: photo('color_diner.jpg'), w: 640, h: 557, tone: 'color' },
+  { src: photo('color_beach.jpg'), w: 640, h: 959, tone: 'color' },
+  { src: photo('color_jump.jpg'), w: 640, h: 424, tone: 'color' },
+  { src: photo('pol_woman.jpg'), w: 736, h: 969, tone: 'polaroid' },
+  { src: photo('pol_man.jpg'), w: 736, h: 969, tone: 'polaroid' },
+  { src: photo('pol_child.jpg'), w: 736, h: 969, tone: 'polaroid' },
 ]
 
 export const photoIndex = (src: string) => PHOTOS.findIndex((p) => p.src === src)
@@ -55,15 +57,15 @@ export interface FocusStop {
 
 /** photos that drift to centre while travelling */
 export const FOCUS_STOPS: FocusStop[] = [
-  { p: 0.26, src: '/photos/bw_stairs.jpg', caption: 'BW 24' },
-  { p: 0.315, src: '/photos/bw_crosswalk.jpg', caption: 'BW 31' },
-  { p: 0.365, src: '/photos/bw_alley.jpg', caption: 'BW 08' },
-  { p: 0.56, src: '/photos/color_plane.jpg', caption: 'COLOR 12' },
-  { p: 0.615, src: '/photos/color_diner.jpg', caption: 'COLOR 19' },
-  { p: 0.67, src: '/photos/color_beach.jpg', caption: 'COLOR 27' },
-  { p: 0.845, src: '/photos/pol_woman.jpg', caption: 'POLAROID 02' },
-  { p: 0.885, src: '/photos/pol_man.jpg', caption: 'POLAROID 16' },
-  { p: 0.925, src: '/photos/pol_child.jpg', caption: 'POLAROID 63' },
+  { p: 0.26, src: photo('bw_stairs.jpg'), caption: 'BW 24' },
+  { p: 0.315, src: photo('bw_crosswalk.jpg'), caption: 'BW 31' },
+  { p: 0.365, src: photo('bw_alley.jpg'), caption: 'BW 08' },
+  { p: 0.56, src: photo('color_plane.jpg'), caption: 'COLOR 12' },
+  { p: 0.615, src: photo('color_diner.jpg'), caption: 'COLOR 19' },
+  { p: 0.67, src: photo('color_beach.jpg'), caption: 'COLOR 27' },
+  { p: 0.845, src: photo('pol_woman.jpg'), caption: 'POLAROID 02' },
+  { p: 0.885, src: photo('pol_man.jpg'), caption: 'POLAROID 16' },
+  { p: 0.925, src: photo('pol_child.jpg'), caption: 'POLAROID 63' },
 ]
 
 export const FOCUS_HALF = 0.026
