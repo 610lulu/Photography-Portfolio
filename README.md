@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+## Live Site
+
+[View the Photography Portfolio](https://610lulu.github.io/Photography-Portfolio-2/)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
@@ -58,7 +62,7 @@ export default defineConfig([
       // Other configs...
       // Enable lint rules for React
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
+      // Alternatively, use this for stricter rules
       reactDom.configs.recommended,
     ],
     languageOptions: {
