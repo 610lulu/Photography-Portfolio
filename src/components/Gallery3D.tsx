@@ -48,27 +48,21 @@ function buildSpecs(): PlaneSpec[] {
   }
 
   const bw = [0, 1, 2, 3, 4]
-  const color = [5, 6, 7, 8, 12, 13, 14, 15, 16, 17, 18]
-  const pol = [9, 10, 11, 19, 20, 21, 22, 23, 24]
+  const color = [13, 14, 15, 16, 17, 18, 29]
+  const pol = [20, 21, 22, 24]
 
-  /* hero cluster — colour left, b&w right (mirrors the reference first frame) */
-  push(5, -1, -6.5, 1.05)
-  push(7, -1, -9, 0.9)
-  push(0, 1, -7, 1.05)
-  push(4, 1, -9.5, 0.9)
+  /* hero cluster — colour left, journal right */
+  push(28, -1, -6.5, 1.05)
+  push(32, -1, -9, 0.9)
+  push(26, 1, -7, 1.05)
+  push(27, 1, -9.5, 0.9)
 
   /* 01 — black & white corridor */
-  for (let i = 0; i < 10; i++) {
-    push(bw[i % bw.length], i % 2 === 0 ? -1 : 1, -12.5 - i * 2.7)
-  }
+  bw.forEach((photo, i) => push(photo, i % 2 === 0 ? -1 : 1, -12.5 - i * 5.7))
   /* 02 — colour corridor */
-  for (let i = 0; i < 11; i++) {
-    push(color[i % color.length], i % 2 === 0 ? 1 : -1, -40 - i * 2.65)
-  }
+  color.forEach((photo, i) => push(photo, i % 2 === 0 ? 1 : -1, -40 - i * 4.4))
   /* 03 — polaroid corridor */
-  for (let i = 0; i < 9; i++) {
-    push(pol[i % pol.length], i % 2 === 0 ? -1 : 1, -70.5 - i * 2.6, 0.9)
-  }
+  pol.forEach((photo, i) => push(photo, i % 2 === 0 ? -1 : 1, -70.5 - i * 6.4, 0.9))
   return specs
 }
 

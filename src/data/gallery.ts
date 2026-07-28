@@ -36,6 +36,13 @@ export const PHOTOS: Photo[] = [
   { src: photo('xhs_journal_05.jpg'), w: 1080, h: 1289, tone: 'polaroid' },
   { src: photo('xhs_journal_06.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
   { src: photo('xhs_journal_07.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
+  { src: photo('xhs_bus_01.jpg'), w: 1920, h: 2560, tone: 'polaroid' },
+  { src: photo('xhs_telescope_01.jpg'), w: 946, h: 1262, tone: 'polaroid' },
+  { src: photo('xhs_tropical_01.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_tropical_03.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_tropical_05.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_tropical_06.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_tropical_08.jpg'), w: 1536, h: 2048, tone: 'color' },
 ]
 
 export const photoIndex = (src: string) => PHOTOS.findIndex((p) => p.src === src)
@@ -71,12 +78,9 @@ export interface FocusStop {
 
 /** photos that drift to centre while travelling */
 export const FOCUS_STOPS: FocusStop[] = [
-  { p: 0.26, src: photo('bw_stairs.jpg'), caption: 'BW 24' },
-  { p: 0.315, src: photo('bw_crosswalk.jpg'), caption: 'BW 31' },
-  { p: 0.365, src: photo('bw_alley.jpg'), caption: 'BW 08' },
-  { p: 0.56, src: photo('color_plane.jpg'), caption: 'COLOR 12' },
-  { p: 0.615, src: photo('xhs_graduation_01.jpg'), caption: 'COLOR 19' },
-  { p: 0.67, src: photo('color_beach.jpg'), caption: 'COLOR 27' },
+  { p: 0.56, src: photo('xhs_graduation_01.jpg'), caption: 'COLOR 03' },
+  { p: 0.615, src: photo('xhs_tropical_05.jpg'), caption: 'COLOR 11' },
+  { p: 0.67, src: photo('xhs_tropical_06.jpg'), caption: 'COLOR 18' },
   { p: 0.845, src: photo('xhs_journal_01.jpg'), caption: 'POLAROID 02' },
   { p: 0.885, src: photo('xhs_journal_05.jpg'), caption: 'POLAROID 16' },
   { p: 0.925, src: photo('xhs_journal_07.jpg'), caption: 'POLAROID 63' },
