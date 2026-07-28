@@ -48,7 +48,7 @@ function buildSpecs(): PlaneSpec[] {
   }
 
   const bw = [0, 1, 2, 3, 4]
-  const color = [5, 6, 7, 8, 12]
+  const color = [5, 6, 7, 8, 12, 13, 14, 15, 16, 17, 18]
   const pol = [9, 10, 11]
 
   /* hero cluster — colour left, b&w right (mirrors the reference first frame) */

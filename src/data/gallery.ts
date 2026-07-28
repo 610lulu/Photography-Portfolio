@@ -23,6 +23,12 @@ export const PHOTOS: Photo[] = [
   { src: photo('pol_man.jpg'), w: 736, h: 969, tone: 'polaroid' },
   { src: photo('pol_child.jpg'), w: 736, h: 969, tone: 'polaroid' },
   { src: photo('xhs_graduation_01.jpg'), w: 1920, h: 2560, tone: 'color' },
+  { src: photo('xhs_city_01.jpg'), w: 1440, h: 1920, tone: 'color' },
+  { src: photo('xhs_city_02.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_city_03.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_city_04.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_city_05.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_city_06.jpg'), w: 1080, h: 1440, tone: 'color' },
 ]
 
 export const photoIndex = (src: string) => PHOTOS.findIndex((p) => p.src === src)
