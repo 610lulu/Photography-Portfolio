@@ -22,6 +22,7 @@ export const PHOTOS: Photo[] = [
   { src: photo('pol_woman.jpg'), w: 736, h: 969, tone: 'polaroid' },
   { src: photo('pol_man.jpg'), w: 736, h: 969, tone: 'polaroid' },
   { src: photo('pol_child.jpg'), w: 736, h: 969, tone: 'polaroid' },
+  { src: photo('xhs_graduation_01.jpg'), w: 1920, h: 2560, tone: 'color' },
 ]
 
 export const photoIndex = (src: string) => PHOTOS.findIndex((p) => p.src === src)
@@ -61,7 +62,7 @@ export const FOCUS_STOPS: FocusStop[] = [
   { p: 0.315, src: photo('bw_crosswalk.jpg'), caption: 'BW 31' },
   { p: 0.365, src: photo('bw_alley.jpg'), caption: 'BW 08' },
   { p: 0.56, src: photo('color_plane.jpg'), caption: 'COLOR 12' },
-  { p: 0.615, src: photo('color_diner.jpg'), caption: 'COLOR 19' },
+  { p: 0.615, src: photo('xhs_graduation_01.jpg'), caption: 'COLOR 19' },
   { p: 0.67, src: photo('color_beach.jpg'), caption: 'COLOR 27' },
   { p: 0.845, src: photo('pol_woman.jpg'), caption: 'POLAROID 02' },
   { p: 0.885, src: photo('pol_man.jpg'), caption: 'POLAROID 16' },
