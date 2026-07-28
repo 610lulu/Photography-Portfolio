@@ -24,11 +24,11 @@ function Sweep({ text, range, progress }: Props) {
         className="absolute left-1/2 top-1/2 whitespace-nowrap font-black text-white"
         style={{
           fontFamily: "'Archivo', sans-serif",
-          fontSize: 'clamp(120px, 21vw, 400px)',
+          fontSize: 'clamp(76px, 13.5vw, 250px)',
           letterSpacing: '0.05em',
           lineHeight: 1,
           transform: `translate(calc(-50% + ${offset.toFixed(2)}vw), -50%)`,
-          opacity,
+          opacity: opacity * 0.36,
         }}
       >
         {text}

@@ -28,15 +28,20 @@ export const Hero = memo(function Hero({ progress }: { progress: number }) {
         </p>
         <h1
           className="font-black uppercase leading-[0.95] text-white"
-          style={{ ...archivo, fontSize: 'clamp(44px, 7.2vw, 118px)', letterSpacing: '0.04em' }}
+          style={{
+            ...archivo,
+            fontSize: 'clamp(36px, 5.6vw, 88px)',
+            letterSpacing: '0.04em',
+            opacity: 0.72,
+          }}
         >
-          Yilin Lu
+          My Life
         </h1>
         <p
           className="mt-3 text-sm font-medium uppercase text-white/85"
           style={{ ...archivo, letterSpacing: '0.55em' }}
         >
-          Black &amp; White
+          Photography
         </p>
         <div className="mx-auto mt-7 h-px w-24 bg-white/35" />
         <p
@@ -69,7 +74,7 @@ export const SectionCards = memo(function SectionCards({ progress }: { progress:
           <div
             key={s.id}
             className="pointer-events-none fixed inset-0 z-20 flex items-center justify-center"
-            style={{ opacity }}
+            style={{ opacity: opacity * 0.62 }}
           >
             <div
               className="text-center"
@@ -87,10 +92,10 @@ export const SectionCards = memo(function SectionCards({ progress }: { progress:
                   ...archivo,
                   fontSize:
                     s.title.length > 20
-                      ? 'clamp(26px, 3.4vw, 58px)'
+                      ? 'clamp(20px, 2.5vw, 42px)'
                       : s.title.length > 16
-                        ? 'clamp(30px, 4vw, 66px)'
-                        : 'clamp(34px, 4.6vw, 76px)',
+                        ? 'clamp(22px, 2.9vw, 48px)'
+                        : 'clamp(26px, 3.4vw, 56px)',
                   letterSpacing: '0.08em',
                 }}
               >
@@ -124,9 +129,14 @@ export const Outro = memo(function Outro({ progress }: { progress: number }) {
       <div className="text-center">
         <h2
           className="font-black uppercase leading-[0.95] text-white"
-          style={{ ...archivo, fontSize: 'clamp(40px, 6.4vw, 104px)', letterSpacing: '0.04em' }}
+          style={{
+            ...archivo,
+            fontSize: 'clamp(34px, 5.2vw, 82px)',
+            letterSpacing: '0.04em',
+            opacity: 0.72,
+          }}
         >
-          Yilin Lu
+          My Life
         </h2>
         <p
           className="mt-4 text-[11px] uppercase text-white/60"
