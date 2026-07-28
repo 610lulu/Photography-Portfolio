@@ -11,7 +11,6 @@ const SCROLL_VH = 1400 // page length in viewport heights
 
 export default function App() {
   const [progress, setProgress] = useState(0)
-  const [tracking, setTracking] = useState(true)
   const [lightbox, setLightbox] = useState<number | null>(null)
 
   const progressRef = useRef(0)
@@ -46,13 +45,6 @@ export default function App() {
     }
   }, [])
 
-  const toggleTracking = useCallback(() => {
-    setTracking((v) => {
-      trackingRef.current = !v
-      return !v
-    })
-  }, [])
-
   const openPhoto = useCallback((index: number) => setLightbox(index), [])
   const closePhoto = useCallback(() => setLightbox(null), [])
 
@@ -79,7 +71,7 @@ export default function App() {
       <PixelFocus stop={focus} />
 
       {/* fixed chrome */}
-      <Chrome progress={progress} tracking={tracking} onToggleTracking={toggleTracking} />
+      <Chrome progress={progress} />
 
       {/* lightbox */}
       <Lightbox photoIndex={lightbox} onClose={closePhoto} />

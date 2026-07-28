@@ -109,6 +109,10 @@ export default function Gallery3D({ progressRef, trackingRef, onPhotoClick }: Pr
       const photo = PHOTOS[spec.photo]
       const tex = loader.load(photo.src)
       tex.colorSpace = THREE.SRGBColorSpace
+      tex.anisotropy = renderer.capabilities.getMaxAnisotropy()
+      tex.minFilter = THREE.LinearMipmapLinearFilter
+      tex.magFilter = THREE.LinearFilter
+      tex.generateMipmaps = true
       const aspect = photo.w / photo.h
       const w = 3.3 * spec.scale
       const h = w / aspect
