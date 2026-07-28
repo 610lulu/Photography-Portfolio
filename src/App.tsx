@@ -58,9 +58,9 @@ export default function App() {
       <Gallery3D progressRef={progressRef} trackingRef={trackingRef} onPhotoClick={openPhoto} />
 
       {/* giant sweep typography */}
-      <Sweep text="BLACK & WHITE" range={SECTIONS[1].sweep} progress={progress} />
-      <Sweep text="COLOR" range={SECTIONS[2].sweep} progress={progress} />
-      <Sweep text="POLAROID" range={SECTIONS[3].sweep} progress={progress} />
+      <Sweep text={SECTIONS[1].title} range={SECTIONS[1].sweep} progress={progress} />
+      <Sweep text={SECTIONS[2].title} range={SECTIONS[2].sweep} progress={progress} />
+      <Sweep text={SECTIONS[3].title} range={SECTIONS[3].sweep} progress={progress} />
 
       {/* narrative overlays */}
       <Hero progress={progress} />

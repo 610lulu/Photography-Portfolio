@@ -65,9 +65,9 @@ export interface SectionStop {
 
 export const SECTIONS: SectionStop[] = [
   { id: 'top', index: '00', title: 'TOP', works: '', start: 0, end: 0.1, card: [0, 0], sweep: [0.015, 0.105] },
-  { id: 'bw', index: '01', title: 'BLACK & WHITE', works: '68 WORKS', start: 0.1, end: 0.4, card: [0.135, 0.215], sweep: [0.115, 0.225] },
-  { id: 'color', index: '02', title: 'COLOR', works: '27 WORKS', start: 0.4, end: 0.72, card: [0.435, 0.515], sweep: [0.415, 0.525] },
-  { id: 'polaroid', index: '03', title: 'POLAROID', works: '01 WORKS', start: 0.72, end: 1, card: [0.745, 0.815], sweep: [0.725, 0.83] },
+  { id: 'bw', index: '01', title: 'SCENE EXPERIENCE', works: '68 WORKS', start: 0.1, end: 0.4, card: [0.135, 0.215], sweep: [0.115, 0.225] },
+  { id: 'color', index: '02', title: 'HUMANISTIC MAPPING', works: '27 WORKS', start: 0.4, end: 0.72, card: [0.435, 0.515], sweep: [0.415, 0.525] },
+  { id: 'polaroid', index: '03', title: 'STREAM OF CONSCIOUSNESS', works: '01 WORKS', start: 0.72, end: 1, card: [0.745, 0.815], sweep: [0.725, 0.83] },
 ]
 
 export interface FocusStop {

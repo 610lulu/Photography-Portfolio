@@ -83,7 +83,16 @@ export const SectionCards = memo(function SectionCards({ progress }: { progress:
               </p>
               <h2
                 className="font-black uppercase leading-none text-white"
-                style={{ ...archivo, fontSize: 'clamp(34px, 4.6vw, 76px)', letterSpacing: '0.08em' }}
+                style={{
+                  ...archivo,
+                  fontSize:
+                    s.title.length > 20
+                      ? 'clamp(26px, 3.4vw, 58px)'
+                      : s.title.length > 16
+                        ? 'clamp(30px, 4vw, 66px)'
+                        : 'clamp(34px, 4.6vw, 76px)',
+                  letterSpacing: '0.08em',
+                }}
               >
                 {s.title}
               </h2>
