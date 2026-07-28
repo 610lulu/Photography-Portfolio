@@ -29,6 +29,13 @@ export const PHOTOS: Photo[] = [
   { src: photo('xhs_city_04.jpg'), w: 1080, h: 1440, tone: 'color' },
   { src: photo('xhs_city_05.jpg'), w: 1080, h: 1440, tone: 'color' },
   { src: photo('xhs_city_06.jpg'), w: 1080, h: 1440, tone: 'color' },
+  { src: photo('xhs_journal_01.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
+  { src: photo('xhs_journal_02.jpg'), w: 1440, h: 1080, tone: 'polaroid' },
+  { src: photo('xhs_journal_03.jpg'), w: 1440, h: 1080, tone: 'polaroid' },
+  { src: photo('xhs_journal_04.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
+  { src: photo('xhs_journal_05.jpg'), w: 1080, h: 1289, tone: 'polaroid' },
+  { src: photo('xhs_journal_06.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
+  { src: photo('xhs_journal_07.jpg'), w: 1080, h: 1440, tone: 'polaroid' },
 ]
 
 export const photoIndex = (src: string) => PHOTOS.findIndex((p) => p.src === src)
@@ -70,9 +77,9 @@ export const FOCUS_STOPS: FocusStop[] = [
   { p: 0.56, src: photo('color_plane.jpg'), caption: 'COLOR 12' },
   { p: 0.615, src: photo('xhs_graduation_01.jpg'), caption: 'COLOR 19' },
   { p: 0.67, src: photo('color_beach.jpg'), caption: 'COLOR 27' },
-  { p: 0.845, src: photo('pol_woman.jpg'), caption: 'POLAROID 02' },
-  { p: 0.885, src: photo('pol_man.jpg'), caption: 'POLAROID 16' },
-  { p: 0.925, src: photo('pol_child.jpg'), caption: 'POLAROID 63' },
+  { p: 0.845, src: photo('xhs_journal_01.jpg'), caption: 'POLAROID 02' },
+  { p: 0.885, src: photo('xhs_journal_05.jpg'), caption: 'POLAROID 16' },
+  { p: 0.925, src: photo('xhs_journal_07.jpg'), caption: 'POLAROID 63' },
 ]
 
 export const FOCUS_HALF = 0.026
